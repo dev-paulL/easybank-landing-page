@@ -31,10 +31,12 @@ body {
 
 header {
   display: flex;
-  position: relative;
+  position: fixed;
+  min-width: 100%;
   justify-content: space-between;
   padding: 1.5rem;
-  z-index: 30;
+  background-color: var(--white);
+  z-index: 3;
 }
 
 header .request-invite-btn {
@@ -48,20 +50,18 @@ header .request-invite-btn {
 
 .hero {
   background: url("images/bg-intro-mobile.svg") no-repeat;
-  height: 22rem;
-  position: relative;
-  z-index: 1;
+  min-height: 22rem;
+  background-position: right;
+  background-position-y: top;
+  background-size: cover;
+  min-width: 100%;
 }
 
-.hero div {
-  min-width: 100%;
+.hero img {
+  max-width: 100%;
   min-height: 100%;
-  background: url("images/image-mockups.png");
-  background-size: cover;
-  background-clip: content-box;
-  background-position-y: bottom;
-  position: absolute;
-  z-index: 2;
+  margin: -14vw auto 0 auto;
+  display: block;
 }
 
 p {
@@ -86,11 +86,10 @@ ul {
   list-style: none;
 }
 .first-section {
-  padding: 1.5rem 0 4rem 0;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: var(--white);
 }
 
 .first-section h1 {
@@ -112,21 +111,30 @@ ul {
 .second-section {
   padding: 1rem;
   text-align: center;
-  display: flex;
-  flex-flow: column;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-flow: column;
   background-color: var(--light-grayish-blue);
+}
+
+.second-section_articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  width: 95%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .second-section article {
   margin-top: 2rem;
+  max-width: 20rem;
 }
 
 .second-section article h2 {
   font-weight: 300;
   font-size: 2rem;
-  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -138,7 +146,7 @@ ul {
 }
 
 .second-section article h3 {
-  padding: 1rem;
+  padding: 1rem 0;
   font-weight: 400;
 }
 
@@ -220,16 +228,78 @@ footer button {
   margin: 1.5rem 0;
 }
 .request-invite-btn {
-  /*   background: rgb(49,211,92); */
   padding: 1rem 2rem;
   border: none;
   color: var(--white);
   font-weight: 600;
-  background: linear-gradient(
-    45deg,
-    var(--lime-green),
-    var(--bright-cyan)
-  );
+  background: linear-gradient(45deg, var(--lime-green), var(--bright-cyan));
   font-size: 1rem;
   border-radius: 2rem;
+}
+
+.main-section-div {
+  background: var(--very-light-gray);
+}
+@media screen and (min-width: 64rem) {
+  .main-section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .hero {
+    grid-column: 2;
+    grid-row: 1;
+    background: none;
+    background: url("images/bg-intro-desktop.svg") no-repeat;
+    background-size: cover;
+  }
+  .hero img {
+    margin: 0;
+    min-height: 110%;
+    filter: drop-shadow(0px 0.3rem 0.5rem 1px hsl(0deg 0% 95.42%));
+  }
+  .first-section {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
+    align-items: start;
+    background: none;
+    padding: 5rem;
+  }
+
+  .first-section h1, .first-section p {
+    text-align: left;
+  }
+
+  .first-section h1 {
+    font-size: 2.6rem;
+
+  }
+
+  .first-section p {
+    font-size: 1.1rem;
+  }
+
+  .second-section {
+    text-align: left;
+    align-items: start;
+    padding: 5rem;
+  }
+  .second-section > article {
+    max-width: 50%;
+  }
+
+  .second-section article h2 {
+    font-weight: 400;
+  }
+
+  .second-section_articles-grid {
+    width: 100%;
+    align-items: start;
+    justify-content: left;
+    grid-template-columns: repeat(auto-fill, 22%);
+  }
+
+  
 }
