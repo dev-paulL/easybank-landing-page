@@ -13,14 +13,30 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot1_mobile.png)
-![](./screenshot1_tablet.png)
-![](./screenshot1_desktop.png)
+<details>   
+<summary>Desktop design</summary>
+<img src="desktop.png">
+</details>
+
+<details>   
+<summary>Tablet design</summary>
+<img src="tablet.png">
+</details>
+
+<details>   
+<summary>Mobile design</summary>
+<img src="mobile.png">
+</details>
+
+<details>   
+<summary>Mobile menu design</summary>
+<img src="mobile_menu.png">
+</details>
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dev-paull.github.io/easybank-landing-page/](https://dev-paull.github.io/easybank-landing-page/)
 
 ## My process
 
@@ -34,10 +50,3 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
-
-*Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.*
-
-### Continued development
-
-*Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.*
