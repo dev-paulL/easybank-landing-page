@@ -29,6 +29,10 @@ body {
   flex-flow: column;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -80,16 +84,15 @@ footer p:last-child a {
 
 .mobile-nav {
   position: absolute;
-  display: flex;
+  text-align: center;
   top: 6rem;
+  right: 2rem;
+  left: 2rem;
   background-color: var(--white);
   justify-self: center;
   width: 85%;
   padding: 2rem;
   border-radius: .2rem;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .mobile-nav li {
@@ -117,9 +120,7 @@ p {
   color: var(--grayish-blue);
   font-weight: 400;
 }
-.hidden {
-  display: none;
-}
+
 h1,
 h2,
 h3 {
@@ -337,6 +338,10 @@ footer a:hover {
     display: block;
     min-height: 5rem;
     align-content: center;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 
   .desktop-nav li {

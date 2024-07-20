@@ -11,8 +11,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
+**(CLICK to see)**
 <details>   
 <summary>Desktop design</summary>
 <img src="desktop.png">
@@ -39,8 +40,6 @@ Users should be able to:
 - Live Site URL: [https://dev-paull.github.io/easybank-landing-page/](https://dev-paull.github.io/easybank-landing-page/)
 
 ## My process
-
-🛑🛑🛑 **WORK IN PROGRESS** 🛑🛑🛑
 
 ### Built with
 
