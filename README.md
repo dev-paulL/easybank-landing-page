@@ -36,16 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/frontend-mentor-easybank-landing-page-GPvZLRXA4J](https://www.frontendmentor.io/solutions/frontend-mentor-easybank-landing-page-GPvZLRXA4J)
 - Live Site URL: [https://dev-paull.github.io/easybank-landing-page/](https://dev-paull.github.io/easybank-landing-page/)
 
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
 
