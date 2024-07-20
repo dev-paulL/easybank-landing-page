@@ -227,6 +227,12 @@ footer nav li {
 footer button {
   margin: 1.5rem 0;
 }
+.footer-first-part {
+  text-align: center;
+}
+.footer-btn-copyright {
+  text-align: center;
+}
 .request-invite-btn {
   padding: 1rem 2rem;
   border: none;
@@ -240,24 +246,27 @@ footer button {
 .main-section-div {
   background: var(--very-light-gray);
 }
+
+
 @media screen and (min-width: 64rem) {
   .main-section-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    background: url("images/bg-intro-desktop.svg") no-repeat;
+    background-position: 160%;
+    background-size: 75% 120%;
   }
 
   .hero {
     grid-column: 2;
     grid-row: 1;
     background: none;
-    background: url("images/bg-intro-desktop.svg") no-repeat;
-    background-size: cover;
-  }
+   }
   .hero img {
     margin: 0;
     min-height: 110%;
-    filter: drop-shadow(0px 0.3rem 0.5rem 1px hsl(0deg 0% 95.42%));
+    
   }
   .first-section {
     grid-column: 1;
@@ -270,11 +279,11 @@ footer button {
 
   .first-section h1, .first-section p {
     text-align: left;
+    width: 80%;
   }
 
   .first-section h1 {
     font-size: 2.6rem;
-
   }
 
   .first-section p {
@@ -301,5 +310,78 @@ footer button {
     grid-template-columns: repeat(auto-fill, 22%);
   }
 
+  .third-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 22%);
+    gap: 1rem;
+    align-items: start;
+    justify-content: center;
+
+  }
+
+  .third-section article figure {
+    grid-row: 1;
+    max-height: 100%;
+  }
+
+  .third-section article figure img {
+    height: 100%;
+    width: 100%;
+  }
+  .third-section h2 {
+    grid-row: 1;
+    column-span: 4;
+  }
+  .third-section article {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows:45% 55%;
+    height: 100%;
+  }
+  .third-section article p:last-child {
+    font-size: .8rem;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+  }
+
+  footer nav ul {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: start;
+    grid-row-start: auto;
+  }
+  
+  footer nav {
+    margin: 0 0 0 7rem;
+  }
+
+  .footer-first-part {
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+    align-items: center;
+  }
+  .footer-btn-copyright {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+  }
+
+  /* 😭😭😭 */
+
+  /* footer nav ul li:nth-child(n+4) {
+    grid-column: 2;
+  }
+  footer nav ul li:nth-child(-n+3) {
+    grid-column: 1;
+  }
+   */
   
 }
